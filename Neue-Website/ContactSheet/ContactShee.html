@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/contactsheet.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="menu">
+        <a href="#">Work</a>
+        <a href="#">About Me</a>
+        <a class="active" href="#">Contact</a>
+      </nav>
+    </header>
+
+    <div class="content-container">
+      <div class="adress">
+        <h1>We would be so happy to get a visit!</h1>
+        <h2>Adress:</h2>
+        <a href="https://muthesius-kunsthochschule.de/" target="_blank">
+          <p>
+            Muthesius Kunsthochschule<br />
+            Legienstr. 35<br />
+            24103 Kiel
+          </p></a
+        >
+        <h1>Or leave a message!</h1>
+
+        <div class="pfeil">
+          <p>&#129187;</p>
+        </div>
+      </div>
+
+      <div class="contact">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name.." />
+        <br />
+
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input checked="checked" name="Gender" type="radio" value="Woman" />
+            Woman <input name="Gender" type="radio" value="Man" /> Man
+          </td>
+          <br />
+        </tr>
+
+        <br />
+        <label for="email">E-Mail:</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Your E-Mail.."
+        />
+        <br />
+
+        <label for="business">Business:</label>
+        <select id="business" name="business">
+          <option value="architect">Architect</option>
+          <option value="business administration">
+            Business Administration
+          </option>
+          <option value="communication">Communication Design</option>
+          <option value="engineer">Engineer</option>
+          <option value="interiorarchitect">Interior-Architect</option>
+        </select>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="england">England</option>
+          <option value="france">France</option>
+          <option value="germany">Germany</option>
+          <option value="newzealand">NewZealand</option>
+        </select>
+
+        <label for="message">Your Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Write something.."
+          style="height: 200px"
+        ></textarea>
+
+        <label>
+          <input
+            type="checkbox"
+            name="Datenverarbeitung bestätigt"
+            value="Ja"
+            required
+          />
+          I confirm that I agree to the processing of my data.
+        </label>
+
+        <form onsubmit="myFunction()">
+          <input type="Submit" value="Submit" />
+        </form>
+
+        <script>
+          function myFunction() {
+            alert(
+              "Thanks for your inquiry! We will contact you as soon as possible :)"
+            );
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="CopyRightText">
+      <p>&#169; Copyright 2021 by Adele, Ankatrin & Klara</p>
+    </div>
+
+    <div class="socialmedia">
+      <a href="https://www.instagram.com"
+        ><img src="images/87390.png" ­target="_blank" ­ alt="Instagram"
+      /></a>
+      <a href="https://m.twitter.com/login"
+        ><img src="images/twitter.png" ­target="_blank" ­ alt="Twitter"
+      /></a>
+      <a href="https://de-de.facebook.com/"
+        ><img src="images/facebook.png" ­target="_blank" ­ alt="Facebook"
+      /></a>
+    </div>
+  </footer>
+</html>
