@@ -1,0 +1,140 @@
+header {
+  background-color: #1d3557ff;
+}
+
+.menu {
+  display: block;
+  margin-bottom: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+}
+
+nav a {
+  width: 25%;
+  height: 3%;
+  margin: 3%;
+  display: inline-block;
+  color: #f1faeeff;
+  text-align: center;
+  text-decoration: none;
+  padding: 1%;
+}
+body {
+  margin: 0%;
+}
+a:hover {
+  background-color: #457b9dff;
+}
+
+.active {
+  background-color: #457b9dff;
+}
+
+body {
+  background-color: #a8dadcff;
+}
+
+.contact {
+  background-color: #f2f2f27a;
+  padding: 50px;
+  margin-bottom: 35px;
+}
+
+input[type="text"],
+select,
+textarea {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 110%;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #1d3557ff;
+  box-sizing: border-box;
+  margin-top: 6px;
+  resize: vertical;
+}
+
+input[type="Submit"] {
+  background-color: #e63946ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+}
+.content-container2 {
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.adress {
+  background-color: #e63946ff;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.adress h1,
+h2,
+p {
+  color: #f1faeeff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.pfeil p {
+  color: #f1faeeff;
+  margin-top: 20px;
+  font-size: 200px;
+  text-align: center;
+  margin: 20px;
+  transform: rotate(90deg);
+}
+
+footer {
+  background-color: #457b9dff;
+  clear: both;
+  bottom: 0;
+  height: 50px;
+}
+
+.CopyRightText p {
+  display: inline-block;
+  width: 21%;
+  float: right;
+  font-size: 60%;
+  margin: 15px 5px 5px 5px;
+}
+
+.socialmedia a img {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 10px 5px 5px;
+}
+
+@media screen and (min-width: 600px) {
+  .adress {
+    margin-bottom: 35px;
+  }
+  .contact {
+    margin-left: 35px;
+    margin-bottom: 35px;
+  }
+
+  .content-container {
+    flex-direction: row;
+  }
+
+  .pfeil p {
+    transform: rotate(0deg);
+  }
+
+  .CopyRightText p {
+    font-size: 70%;
+    float: right;
+  }
+}

@@ -1,0 +1,113 @@
+header {
+  background-color: #1d3557ff;
+}
+
+.menu {
+  display: block;
+  padding: 0px;
+  margin-bottom: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+}
+
+nav a {
+  width: 25%;
+  height: 3%;
+  margin: 3%;
+  display: inline-block;
+  color: #f1faeeff;
+  text-align: center;
+  text-decoration: none;
+  padding: 1%;
+}
+nav a:hover {
+  background-color: #457b9dff;
+}
+.active {
+  background-color: #457b9dff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.1fr 0.8fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+}
+
+#headline {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#header-bild {
+  width: 100vw;
+  margin-top: 10px;
+}
+
+#text {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+h1,
+h2,
+p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  color: #f1faeeff;
+}
+
+h1 {
+  font-size: 500%;
+  text-align: center;
+}
+h2 {
+  font-size: 200%;
+  text-align: center;
+}
+
+body {
+  background-color: #457b9dff;
+  margin: 0;
+}
+
+.bilder img {
+  width: 33%;
+}
+.bilder {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.footer {
+  background-color: #457b9dff;
+  clear: both;
+  bottom: 0;
+  height: 50px;
+}
+
+.CopyRightText p {
+  color: aliceblue;
+  display: inline-block;
+  width: 21%;
+  float: right;
+  font-size: 60%;
+  margin: 15px 5px 5px 5px;
+}
+
+.socialmedia a img {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 10px 5px 5px;
+}
